@@ -39,6 +39,7 @@ p{
     max-width: 800px;
     padding: 20px;
     margin: auto;
+
 }
 
 .snow {
@@ -91,4 +92,9 @@ button{
 
 .color-change-btn:hover {
     background-color: #00a2d8; /* Світло-голубий колір */
+}
+
+
+main p{
+    color: white;
 }
