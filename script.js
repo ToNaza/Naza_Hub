@@ -27,3 +27,25 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const openButton = document.getElementById("openmodul");
+    const closeButton = document.getElementById("closemodul");
+    const modal = document.getElementById("modul");
+
+    if (openButton && closeButton && modal) {
+        openButton.addEventListener("click", function() {
+            modal.classList.add("open");
+            modal.classList.remove("closing"); // Ensure the closing class is removed when opening
+        });
+
+        closeButton.addEventListener("click", function() {
+            modal.classList.add("closing");
+            setTimeout(() => {
+                modal.classList.remove("open");
+                modal.classList.remove("closing");
+            }, 500); // Match the duration of the transition
+        });
+    } else {
+        console.error("One or more elements not found");
+    }
+});

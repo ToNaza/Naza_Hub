@@ -86,9 +86,83 @@ button{
     background-color: #00FF94; /* Початковий колір */
     border: none;  
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавний перехід */
+    transition: background-color 0.5s ease; /* Плавний перехід */
 }
 
 .color-change-btn:hover {
     background-color: #00a2d8; /* Світло-голубий колір */
+}
+
+
+.color-change-btn2 {
+    background-color: rgb(255, 85, 23);
+    border: none;  
+    cursor: pointer;
+    transition: background-color 0.5s ease; /* Плавний перехід */
+}
+
+.color-change-btn2:hover {
+    background-color: #ff7575; /* Світло-голубий колір */
+}
+
+
+.modul {
+    background-color: rgba(0, 0, 0, 0.418);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+.modul_box {
+    width: 350px;
+    height: 200px;
+    background-color: rgb(166, 166, 166);
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 220px;
+    border-radius: 10px;
+    transform: scale(0.7); /* Початковий масштаб */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.modul.open {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modul.open .modul_box {
+    transform: scale(1); /* Нормальний масштаб при відкритті */
+    opacity: 1; /* Нормальна непрозорість при відкритті */
+}
+
+.modul.closing .modul_box {
+    transform: scale(0.7); /* Анімація зменшення масштабу при закритті */
+    opacity: 0; /* Анімація прозорості при закритті */
+}
+
+.modul_box img{
+    width: 30px;
+    margin: 7px;
+    border-radius: 5px;
+}
+
+.modul_box button{
+    width: 300px;
+    height: 25px;
+    margin-left: 24px;
+    background-color: hsl(0, 100%, 65%);
+}
+
+
+.modul.open {
+    visibility: visible;
+    opacity: 1;
+}
+.modul.open .modul_box {
+    transform: scale(1);
 }
