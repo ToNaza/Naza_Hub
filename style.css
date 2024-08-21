@@ -107,7 +107,6 @@ button{
 
 
 .modul {
-    background-color: rgba(0, 0, 0, 0.636);
     position: fixed;
     top: 0;
     left: 0;
@@ -120,7 +119,7 @@ button{
 
 .modul_box {
     width: 350px;
-    height: 200px;
+    height: 220px;
     background-color: rgb(166, 166, 166);
     border: 2px solid black;
     margin: auto;
