@@ -151,3 +151,61 @@ button{
 .modul.open .modul_box {
     transform: scale(1);
 }
+
+
+.god {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.536);
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    padding: 10px;
+}
+
+.god_box {
+    background-color: rgb(141, 141, 141);
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border: solid black 2px;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.god_box button {
+    width: 80%;
+    font-size: 16px;
+    height: 50px; /* Висота кнопки за замовчуванням */
+}
+
+/* Адаптація для екранів до 600px */
+@media (max-width: 600px) {
+    .god_box {
+        width: 90%;
+        height: auto;
+        margin-top: 100px;
+        padding: 15px;
+    }
+
+    .god_box p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .god_box button {
+        height: 40px; /* Менша висота для маленьких екранів */
+    }
+}
+
+/* Адаптація для екранів понад 1200px */
+@media (min-width: 1200px) {
+    .god_box button {
+        height: 60px; /* Більша висота для великих екранів */
+    }
+}
